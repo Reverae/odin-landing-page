@@ -8,7 +8,7 @@
 
 body {
   font-family: "roboto", sans-serif;
-  background-color: #1F2937;
+  background-color: #F9FAF8;
 }
 
 /* header section and nav bar*/
@@ -121,26 +121,13 @@ ul li:hover {
 
 .container {
   height: 300px;
-  width: ;
+  max-width: 1200px;
   background-color:#1F2937;
   color: #F9FAF8;
   border: 1px solid white;
   padding:20px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-
 }
 
-.hero-left {
-  border: 1px solid white;
-  width: calc 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
-}
-
-.hero-second {
-  margin-top: 25px;
-  margin-right: 100px;
-}
