@@ -13,6 +13,7 @@ body {
 
 /* header section and nav bar*/
 
+
 header {
   padding: 0 20px;
   background-color: #1F2937;
@@ -47,6 +48,7 @@ ul {
 
 ul a {
   color: #F9FAF8;
+  font-size: 18px;
 }
 
 ul li {
@@ -117,10 +119,38 @@ ul li:hover {
   }
 }
 
-/* hero section */
+@media (min-width) {
+  .container, .header {
+    max-width: 960;
+  }padding: 2rem;
+}
+
+/* hero section ----------------------------*/
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section h1 {
+  color: #F9FAF8;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+section p {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.hero {
+  background-color:#1F2937;
+}
 
 .container {
-  height: 300px;
+  height: 400px;
   max-width: 1200px;
   background-color:#1F2937;
   color: #F9FAF8;
@@ -129,5 +159,41 @@ ul li:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.divider {
+  box-sizing: border-box;
+  padding: 3vw; 
+  /* set media query for max size to stop divier growing*/
+  width: auto;
+  border: 1px solid white;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  max-width: 10rem;
+  padding-top: 1em;
+  align-self: center;
+}
+
+button {
+  height: 2rem;
+  width: 8rem;
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em 0 #F9FAF8;
+  border: none;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 0.2px;
+  background-color: #3882f6;
+  color: #F9FAF8;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
 }
 
