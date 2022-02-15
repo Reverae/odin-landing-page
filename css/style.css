@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  width: 1200px;
+  width: 1280px;
 }
 
 /*.divider1 {
@@ -167,7 +167,7 @@ section p {
 
 .container {
   height: 400px;
-  max-width: 1200px;
+  max-width: 1280px;
   background-color:#1F2937;
   color: #F9FAF8;
   padding:20px;
@@ -177,17 +177,13 @@ section p {
   align-items: stretch;
 }
 
-/*.divider {
-  box-sizing: border-box;
-  padding: 3vw; 
-  width: auto;
-  border: 1px solid white;
-}*/
-
 .hero-left {
   display: flex;
   flex-direction: column;
   padding: 20px 50px 20px 0;
+  justify-content: space-between;
+  max-width: 736px;
+  flex-shrink: 3;
 }
 
 .image {
@@ -197,14 +193,16 @@ section p {
 }
 
 .hero-img {
-  width: 450px;
+  display: block;
+  width: 500px;
+  max-width: 100%;
   height: auto;
 }
 
 .button {
   max-width: 10rem;
   padding-top: 1em;
-  justify-self: flex-end;
+  justify-self: end;
 }
 
 button {
@@ -230,7 +228,15 @@ button:hover {
   text-decoration: none;
 }
 
-/*.hero-left, .container, .image {
+
+/*.divider {
+  box-sizing: border-box;
+  padding: 3vw; 
+  width: auto;
+  border: 1px solid white;
+}*/
+
+.hero-left, .container, .image {
   border: 1px solid white;
 }
 
