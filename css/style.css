@@ -11,6 +11,13 @@ body {
   background-color: #F9FAF8;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
 /* header section and nav bar*/
 
 #container {
@@ -156,7 +163,7 @@ section h1 {
   font-weight: 800;
 }
 
-section p {
+.hero p {
   color: #e5e7eb;
   font-size: 18px;
 }
@@ -168,13 +175,21 @@ section p {
 .container {
   height: 400px;
   max-width: 1280px;
+  padding: 0 20px;
+  display: flex;
+}
+
+.hero-container {
   background-color:#1F2937;
   color: #F9FAF8;
-  padding:20px;
-  display: flex;
+  padding-top: 20px;
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
+}
+
+.info-container {
+  
 }
 
 .hero-left {
@@ -193,11 +208,25 @@ section p {
 }
 
 .hero-img {
-  display: block;
-  width: 500px;
-  max-width: 100%;
+  display: flex;
+  width: 450px;
   height: auto;
 }
+
+.info-image {
+  display: block;
+  max-width: 300px;
+  height: auto;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.info img {
+  border: 5px solid #3882f6;
+  border-radius: 0.3em;
+}
+
+
 
 .button {
   max-width: 10rem;
@@ -228,13 +257,23 @@ button:hover {
   text-decoration: none;
 }
 
+/* information section */
+
+.info h2 {
+  font-weight: 800;
+  font-size: 36px;
+}
+
+.info {
+  color: #1F2937
+}
 
 /*.divider {
   box-sizing: border-box;
   padding: 3vw; 
   width: auto;
   border: 1px solid white;
-}*/
+}
 
 .hero-left, .container, .image {
   border: 1px solid white;
