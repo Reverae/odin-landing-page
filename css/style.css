@@ -163,6 +163,11 @@ section h1 {
   font-weight: 800;
 }
 
+.test {
+  background-color:#e5e7eb;
+
+}
+
 .hero p {
   color: #e5e7eb;
   font-size: 18px;
@@ -173,7 +178,7 @@ section h1 {
 }
 
 .container {
-  height: 400px;
+  height: auto;
   max-width: 1280px;
   padding: 0 20px;
   display: flex;
@@ -188,9 +193,41 @@ section h1 {
   align-items: stretch;
 }
 
-.info-container {
-  
+.test-container, .test-head {
+  background-color:#e5e7eb;
+  font-size: 24px;
+  color: #1f2937;
+  flex-direction: column;
 }
+
+
+.test-quote {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.test-wrap {
+  height: 300px;
+}
+
+.quotes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.quote1, .quote2, .quote3 {
+  max-width: 150px;
+  max-height: 150px;
+  border: 3px solid #1F2937;
+  margin: 10px;
+}
+
+.quotes p {
+  width: 75px;
+  height: 75px;
+padding: 10px;
+}
+
 
 .hero-left {
   display: flex;
@@ -259,7 +296,7 @@ button:hover {
 
 /* information section */
 
-.info h2 {
+.info h2, .test h3 {
   font-weight: 800;
   font-size: 36px;
 }
